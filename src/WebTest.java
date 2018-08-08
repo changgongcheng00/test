@@ -46,8 +46,8 @@ public class WebTest {
             int startPos = i*currentPartSize;//计算每个线程下载的开始位置
             RandomAccessFile currentPart = new RandomAccessFile("下载文件保存位置","rw");//每个线程用RandomAccessFile下载
             currentPart.seek(startPos);//定位每个线程的下载位置
-            private DownThread[] threads;
-            threads[i] = new DownThread(startPos,currentPartSize,currentPart)
+            DownThread[] threads;
+            threads[i] = new DownThread(startPos,currentPartSize,currentPart);
             threads[i].start();
         }
 
