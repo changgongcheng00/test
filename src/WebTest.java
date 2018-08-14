@@ -24,7 +24,7 @@ public class WebTest {
         ip.getHostAddress();//获取ip
         InetAddress local = InetAddress.getByAddress(new byte[]{127,0,0,1});
         local.isReachable(2000);
-        local.getCanonicalHostName();//获取全限定域名
+        local.getCanonicalHostName();//获取全限定域名11
         //URLDecoder URLEncoder
         String k = URLDecoder.decode("","utf-8");
         String v = URLEncoder.encode("","GBK");
